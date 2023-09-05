@@ -1,16 +1,33 @@
-@media screen and (min-width: 991px) {
-	.navBarDisplay {
-		height: 7rem;
-		display: flex;
-		flex-direction: column;
-	}
-	.navbarList {
-		width: 75%;
-		display: flex;
-		justify-content: space-evenly;
-	}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 7rem;
 }
-
+.navBarDisplay {
+	width: 90%;
+}
+.navbarList {
+	width: 75%;
+	display: flex;
+	justify-content: space-evenly;
+}
 .nikeLogo {
 	width: 4rem;
+}
+/* animacion para links no activos */
+.navItem::after {
+	content: "";
+	display: block;
+	height: 3px;
+	background-color: black;
+	transform: scale(0, 1);
+	transform-origin: center;
+	transition: transform 0.25s;
+}
+.navItem:hover::after {
+	transform: scale(1, 1);
+}
+/* subrayado paar pagina activa + active de bootstrap*/
+.activeLink {
+	border-bottom: solid 3px black;
 }
