@@ -1,0 +1,16 @@
+@media screen and (min-width: 991px) {
+	.navBarDisplay {
+		height: 7rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.navbarList {
+		width: 75%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+.nikeLogo {
+	width: 4rem;
+}
