@@ -1,3 +1,4 @@
+import React from "react";
 import "../assets/styles/navbar.css";
 import nikeLogo from "../assets/imgs/nikeLogo.png";
 import CartWidget from "./CartWidget";

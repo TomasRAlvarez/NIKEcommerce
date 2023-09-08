@@ -1,0 +1,8 @@
+.items {
+	height: 90vh;
+	display: flex;
+}
+.items h1 {
+	height: fit-content;
+	margin: auto;
+}

@@ -14,7 +14,7 @@
 }
 .cartContainer img:hover ~ .cartItems {
 	animation: inCart 2s ease-out;
-	animation-fill-mode: forwards;
+	animation-fill-mode: both;
 }
 .cartItems {
 	height: 2rem;
