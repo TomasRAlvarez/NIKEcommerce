@@ -5,7 +5,7 @@ function App() {
 	return (
 		<>
 			<Nabvar />
-			<ItemListContainer greeting="Bienvenido" />
+			<ItemListContainer />
 		</>
 	);
 }
