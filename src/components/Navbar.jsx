@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../assets/styles/navbar.css";
 import nikeLogo from "../assets/imgs/nikeLogo.png";
 import CartWidget from "./CartWidget";
@@ -12,33 +13,33 @@ const Nabvar = () => {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className="navbarTitle">
-						<a className="navbar-brand fs-2" href="#">
+						<Link className="navbar-brand fs-2" to="/">
 							<img className="nikeLogo" src={nikeLogo} alt="" />
 							NIKEcommerce
 							<img className="nikeLogo" src={nikeLogo} alt="" />
-						</a>
+						</Link>
 					</div>
 					<div className="collapse navbar-collapse w-100 justify-content-center" id="navbarNav">
 						<ul className="navbar-nav navbarList">
-							<li className="nav-item activeLink">
-								<a className="nav-link fs-4 active" href="#">
+							<li className="nav-item navItem">
+								<NavLink className="nav-link fs-4" to="/">
 									Inicio
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<a className="nav-link fs-4" href="#">
+								<NavLink className="nav-link fs-4" to="/Hombre">
 									Hombre
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<a className="nav-link fs-4" href="#">
+								<NavLink className="nav-link fs-4" to="/Mujer">
 									Mujer
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<a className="nav-link fs-4" href="#">
+								<NavLink className="nav-link fs-4" to="/">
 									Ver Todo
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>

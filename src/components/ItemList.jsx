@@ -1,18 +1,12 @@
 import React from "react";
 import ItemCard from "./ItemCard";
+import "../assets/styles/itemCard.css";
 
 const ItemList = ({ items }) => {
 	return (
-		<div className="row">
+		<div className="itemsView">
 			{items.map((item) => (
-				<ItemCard
-					key={item.id}
-					itemId={item.id}
-					itemTitle={item.title}
-					itemImg={item.image}
-					itemPrice={item.price}
-					itemDescript={item.description}
-				/>
+				<ItemCard key={item.id} itemId={item.id} itemTitle={item.title} itemImg={item.image} itemPrice={item.price} />
 			))}
 		</div>
 	);

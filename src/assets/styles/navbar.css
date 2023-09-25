@@ -27,7 +27,3 @@
 .navItem:hover::after {
 	transform: scale(1, 1);
 }
-/* subrayado paar pagina activa + active de bootstrap*/
-.activeLink {
-	border-bottom: solid 3px black;
-}
