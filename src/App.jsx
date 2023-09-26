@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Nabvar from "./components/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
-import Detail from "./components/Detail";
 
 function App() {
 	return (
@@ -13,7 +12,7 @@ function App() {
 				<Route path="/category/:categoryId" element={<ItemListContainer />} />
 				<Route path="/category/:categoryId" element={<ItemListContainer />} />
 				<Route path="/category/:categoryId" element={<ItemListContainer />} />
-				<Route path="/item/:itemId" element={<Detail />} />
+				<Route path="/item/:itemId" element={<ItemDetailContainer />} />
 			</Routes>
 		</>
 	);
