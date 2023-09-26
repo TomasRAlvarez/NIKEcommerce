@@ -27,18 +27,18 @@ const Nabvar = () => {
 								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<NavLink className="nav-link fs-4" to="/Hombre">
+								<NavLink className="nav-link fs-4" to="/category/men's clothing">
 									Hombre
 								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<NavLink className="nav-link fs-4" to="/Mujer">
+								<NavLink className="nav-link fs-4" to="/category/women's clothing">
 									Mujer
 								</NavLink>
 							</li>
 							<li className="nav-item navItem">
-								<NavLink className="nav-link fs-4" to="/">
-									Ver Todo
+								<NavLink className="nav-link fs-4" to="/category/electronics">
+									Sale
 								</NavLink>
 							</li>
 						</ul>

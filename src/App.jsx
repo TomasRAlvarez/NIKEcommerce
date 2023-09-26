@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Nabvar from "./components/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
-import Hombre from "./assets/pages/Hombre.jsx";
-import Mujer from "./assets/pages/Mujer.jsx";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import Detail from "./components/Detail";
 
 function App() {
 	return (
@@ -10,8 +10,10 @@ function App() {
 			<Nabvar />
 			<Routes>
 				<Route path="/" element={<ItemListContainer />} />
-				<Route path="/Hombre" element={<Hombre />} />
-				<Route path="/Mujer" element={<Mujer />} />
+				<Route path="/category/:categoryId" element={<ItemListContainer />} />
+				<Route path="/category/:categoryId" element={<ItemListContainer />} />
+				<Route path="/category/:categoryId" element={<ItemListContainer />} />
+				<Route path="/item/:itemId" element={<Detail />} />
 			</Routes>
 		</>
 	);
