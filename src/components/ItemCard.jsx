@@ -8,7 +8,7 @@ const ItemCard = ({ itemId, itemTitle, itemImg, itemPrice }) => {
 			<div className="card-body itemData">
 				<h5 className="card-title">{itemTitle}</h5>
 				<p className="card-text">$ {itemPrice}</p>
-				<NavLink to={`/item/${itemId}`} className="btn btn-primary">
+				<NavLink to={`/item/${itemId}`} className="btn btn-dark">
 					Comprar
 				</NavLink>
 			</div>

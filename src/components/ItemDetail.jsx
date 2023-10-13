@@ -13,13 +13,13 @@ const ItemDetail = ({ item }) => {
 				</div>
 				<div className="carousel-inner">
 					<div className="carousel-item active" data-bs-interval="10000">
-						<img src={item.image} className="d-block itemCarouselImg" alt="..." />
+						<img src={item.img} className="d-block itemCarouselImg" alt="..." />
 					</div>
 					<div className="carousel-item" data-bs-interval="2000">
-						<img src={item.image} className="d-block itemCarouselImg" alt="..." />
+						<img src={item.img} className="d-block itemCarouselImg" alt="..." />
 					</div>
 					<div className="carousel-item">
-						<img src={item.image} className="d-block itemCarouselImg" alt="..." />
+						<img src={item.img} className="d-block itemCarouselImg" alt="..." />
 					</div>
 				</div>
 				<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -36,7 +36,7 @@ const ItemDetail = ({ item }) => {
 				<h4>{item.description}</h4>
 				<div className="itemInfoBuy">
 					<h2>$ {item.price}</h2>
-					<button type="button" class="btn btn-dark">
+					<button type="button" className="btn btn-dark">
 						Agregar al carrito
 					</button>
 				</div>
