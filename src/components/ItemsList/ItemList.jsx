@@ -1,6 +1,6 @@
 import React from "react";
 import ItemCard from "./ItemCard";
-import "../assets/styles/itemCard.css";
+import "../../assets/styles/itemCard.css";
 
 const ItemList = ({ items }) => {
 	return (

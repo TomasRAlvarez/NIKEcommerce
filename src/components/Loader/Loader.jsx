@@ -1,6 +1,6 @@
 import React from "react";
-import "../assets/styles/loader.css";
-import nikeLogo from "../assets/imgs/nikeLogo.png";
+import "../../assets/styles/loader.css";
+import nikeLogo from "../../assets/imgs/nikeLogo.png";
 
 const Loader = () => {
 	return (

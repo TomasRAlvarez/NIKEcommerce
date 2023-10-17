@@ -1,9 +1,9 @@
 import React from "react";
-import "../assets/styles/ItemListContainer.css";
-import useFetch from "../hooks/useFetch";
-import useFetchCategory from "../hooks/useFetchCategory";
+import "../../assets/styles/ItemListContainer.css";
+import useFetch from "../../hooks/useFetch";
+import useFetchCategory from "../../hooks/useFetchCategory";
 import { useParams } from "react-router-dom";
-import Loader from "./Loader";
+import Loader from "../Loader/Loader";
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {

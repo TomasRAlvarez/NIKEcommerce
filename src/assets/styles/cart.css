@@ -9,30 +9,15 @@
 	transform: translateX(0px);
 	transition: ease-in-out 0.75s;
 }
-.cartContainer img:hover {
-	transform: translateX(20px);
-}
-.cartContainer img:hover ~ .cartItems {
-	animation: inCart 2s ease-out;
-	animation-fill-mode: both;
-}
 .cartItems {
 	height: 2rem;
 	width: 2rem;
 	border-radius: 50%;
 	font-size: 2rem;
+	text-decoration: none;
 	text-align: center;
 	user-select: none;
-	transition: ease-in-out 0.75s;
 }
-@keyframes inCart {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	50% {
-		transform: translate(-10px, -10px);
-	}
-	100% {
-		transform: translate(-15px, 15px);
-	}
+.cartItems p {
+	text-decoration: none;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../assets/styles/navbar.css";
 import nikeLogo from "../assets/imgs/nikeLogo.png";
-import CartWidget from "./CartWidget";
+import CartWidget from "./Cart/CartWidget";
 
 const Nabvar = () => {
 	return (

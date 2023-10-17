@@ -1,8 +1,8 @@
 import React from "react";
-import "../assets/styles/itemDetail.css";
+import "../../assets/styles/itemDetail.css";
+import AddBtn from "./AddBtn";
 
-const ItemDetail = ({ item }) => {
-	//item.id, item.image, item.title, item.description, item.price
+const ItemDetail = ({ item, onAdd }) => {
 	return (
 		<div className="itemDetail">
 			<div id="carouselExampleDark" className="carousel carousel-dark slide itemCarousel">
@@ -35,10 +35,8 @@ const ItemDetail = ({ item }) => {
 				<h1>{item.title}</h1>
 				<h4>{item.description}</h4>
 				<div className="itemInfoBuy">
-					<h2>$ {item.price}</h2>
-					<button type="button" className="btn btn-dark">
-						Agregar al carrito
-					</button>
+					<h2>${item.price.toLocaleString()}</h2>
+					<AddBtn onAdd={onAdd} />
 				</div>
 			</div>
 		</div>
