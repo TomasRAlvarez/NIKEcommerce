@@ -42,6 +42,20 @@ const CartContextProvider = ({ children }) => {
 		setCart(newCart);
 	};
 
+	//Funcion q devuelve cantidad de un mismo item en el carrito
+	const countItem = (id) => {
+		let countItem = 0;
+		if (isInCart(id)) {
+			cart.map((el) => {
+				if (el.item.id === id) {
+					countItem = el.q;
+				}
+			});
+			return countItem;
+		}
+		return countItem;
+	};
+
 	//Funcion q elimina todos los items del carrito
 	const clear = () => {
 		setCart([]);
@@ -52,6 +66,7 @@ const CartContextProvider = ({ children }) => {
 		manageItems,
 		isInCart,
 		removeItem,
+		countItem,
 		clear,
 	};
 

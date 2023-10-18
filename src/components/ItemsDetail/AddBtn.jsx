@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import CartContext from "../../context/CartContext/CartContext";
 
-const AddBtn = ({ onAdd }) => {
-	const [cant, setCant] = useState(0);
+const AddBtn = ({ id, onAdd }) => {
+	//cuento cantidad de este item en el carrito
+	const { countItem } = useContext(CartContext);
+	let count = countItem(id);
+
+	const [cant, setCant] = useState(count);
 
 	const add = () => {
 		setCant(cant + 1);
@@ -20,7 +25,7 @@ const AddBtn = ({ onAdd }) => {
 			<button onClick={add} type="button" className="btn btn-dark mx-4">
 				+
 			</button>
-			<p>{cant}</p>
+			<p>{count}</p>
 			<button onClick={substract} type="button" className="btn btn-dark mx-4">
 				-
 			</button>

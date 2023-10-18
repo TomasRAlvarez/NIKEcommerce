@@ -36,7 +36,7 @@ const ItemDetail = ({ item, onAdd }) => {
 				<h4>{item.description}</h4>
 				<div className="itemInfoBuy">
 					<h2>${item.price.toLocaleString()}</h2>
-					<AddBtn onAdd={onAdd} />
+					<AddBtn id={item.id} onAdd={onAdd} />
 				</div>
 			</div>
 		</div>
