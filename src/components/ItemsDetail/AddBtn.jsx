@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import CartContext from "../../context/CartContext/CartContext";
+import React, { useState } from "react";
 
 const AddBtn = ({ onAdd }) => {
 	const [cant, setCant] = useState(0);

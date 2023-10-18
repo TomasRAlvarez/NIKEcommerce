@@ -7,17 +7,15 @@ import CartContext from "../../context/CartContext/CartContext";
 const CartWidget = () => {
 	const { cart } = useContext(CartContext);
 	let q = 0;
-	// cart.map((item) => {
-	// 	q = q + item.q;
-	// });
+	cart.map((item) => {
+		q = q + item.q;
+	});
 
 	return (
-		<NavLink to="/cart">
+		<NavLink to="/cart" className="cartLink">
 			<div className="cartContainer">
 				<img src={cartImg} alt="" />
-				<span className="cartItems">
-					<p>{q}</p>
-				</span>
+				<p className="cartItems">{q}</p>
 			</div>
 		</NavLink>
 	);

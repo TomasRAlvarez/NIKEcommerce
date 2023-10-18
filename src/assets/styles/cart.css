@@ -1,3 +1,7 @@
+.cartLink {
+	color: black;
+	text-decoration: none;
+}
 .cartContainer {
 	margin: auto;
 	width: 5rem;
@@ -10,14 +14,5 @@
 	transition: ease-in-out 0.75s;
 }
 .cartItems {
-	height: 2rem;
-	width: 2rem;
-	border-radius: 50%;
 	font-size: 2rem;
-	text-decoration: none;
-	text-align: center;
-	user-select: none;
-}
-.cartItems p {
-	text-decoration: none;
 }

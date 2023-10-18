@@ -9,11 +9,10 @@ const ItemDetailContainer = () => {
 	const { id } = useParams();
 	const [loading, item] = useFetchId({ id });
 
-	const { cart } = useContext(CartContext);
-	const { addItem } = useContext(CartContext);
+	const { manageItems } = useContext(CartContext);
 
 	const onAdd = (q) => {
-		addItem(item, q);
+		manageItems(item, q);
 	};
 
 	if (loading) {
