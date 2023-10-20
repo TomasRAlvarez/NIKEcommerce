@@ -45,7 +45,6 @@
 .cartOrder {
 	width: 25%;
 	height: 80vh;
-	position: sticky;
 	border: solid #474747 0.2rem;
 	border-radius: 1rem;
 }

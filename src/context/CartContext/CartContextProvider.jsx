@@ -10,8 +10,11 @@ const CartContextProvider = ({ children }) => {
 	const manageItems = (item, q) => {
 		const id = item.id;
 
-		//Si la cantidad es 0, elimino el item del carrito
-		if (q === 0) {
+		if (q > item.stock) {
+			//Si la cantidad es mayor al stock, alert
+			alert("Alcanzo limite de stock");
+		} else if (q === 0) {
+			//Si la cantidad es 0, elimino el item del carrito
 			removeItem(id);
 		} else {
 			if (isInCart(id)) {
@@ -56,18 +59,12 @@ const CartContextProvider = ({ children }) => {
 		return countItem;
 	};
 
-	//Funcion q elimina todos los items del carrito
-	const clear = () => {
-		setCart([]);
-	};
-
 	const values = {
 		cart,
 		manageItems,
 		isInCart,
 		removeItem,
 		countItem,
-		clear,
 	};
 
 	return <CartContext.Provider value={values}>{children}</CartContext.Provider>;
