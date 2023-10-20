@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import CartContext from "../../context/CartContext/CartContext";
 import CartDetailCard from "./CartDetailCard";
-import CartDetailOrder from "./CartDetailOrder";
 import "../../assets/styles/cartDetail.css";
 import { NavLink } from "react-router-dom";
+import CartDetailOrderContainer from "./CartDetailOrderContainer";
 
 const CartDetail = () => {
 	const { cart } = useContext(CartContext);
@@ -22,7 +22,7 @@ const CartDetail = () => {
 							<CartDetailCard key={el.item.id} id={el.item.id} title={el.item.title} price={el.item.price} q={el.q} img={el.item.img} />
 						))}
 					</div>
-					<CartDetailOrder />
+					<CartDetailOrderContainer />
 				</div>
 			)}
 			{emptyCart && (

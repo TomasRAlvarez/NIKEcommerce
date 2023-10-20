@@ -25,7 +25,7 @@ const AddBtn = ({ id, onAdd }) => {
 			<button onClick={add} type="button" className="btn btn-dark mx-4">
 				+
 			</button>
-			<p>{count}</p>
+			<h4>{count}</h4>
 			<button onClick={substract} type="button" className="btn btn-dark mx-4">
 				-
 			</button>
